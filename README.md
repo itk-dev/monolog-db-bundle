@@ -8,6 +8,21 @@ Installation:
 composer require itk-dev/monolog-db-bundle "^1.0"
 ```
 
+Add bundle in your `AppKernel.php`:
+
+```php
+    public function registerBundles()
+    {
+        $bundles = [
+            …,
+            new ItkDev\MonologDbBundle\ItkDevMonologDbBundle(),
+            …
+        ];
+
+        …
+    }
+```
+
 Configuration:
 
 ```yml
